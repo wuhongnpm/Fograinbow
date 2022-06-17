@@ -1,8 +1,11 @@
-package com.fograinbow;
+package com.example.fograinbow;
 
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 
 import androidx.navigation.NavController;
@@ -10,7 +13,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.fograinbow.databinding.ActivityMainBinding;
+import com.example.fograinbow.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;

@@ -1,4 +1,4 @@
-package com.fograinbow;
+package com.example.fograinbow;
 
 import org.junit.Test;
 
