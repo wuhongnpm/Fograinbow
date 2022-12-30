@@ -17,8 +17,15 @@ import com.example.fograinbow.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+ //   TextView textView2;
+    TextView textView4;
+    Button button1,button2;
+
+
 
     private AppBarConfiguration appBarConfiguration;
     private ActivityMainBinding binding;
@@ -26,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // 设置一个变量,绑带idtextView2
+     //   textView2 = findViewById(R.id.textView2);
+        textView4 = findViewById(R.id.textView4);
+        button1 = findViewById(R.id.button1);
+        button2 = findViewById(R.id.button2);
+        //监听器
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View View) {
+                textView4.setText("Left");
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textView4.setText("Right");
+            }
+        });
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -44,6 +69,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    /*
+    @Override
+    protected void onPause() {
+        super.onPause();
+        textView2.setText("pause");
+    }
+
+     */
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
