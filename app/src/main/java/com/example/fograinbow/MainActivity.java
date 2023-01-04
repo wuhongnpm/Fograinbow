@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
         //监听器
+        /*
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View View) {
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 textView4.setText("Right");
             }
         });
+        */
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
